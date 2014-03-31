@@ -1,0 +1,16 @@
+<h5>Characters</h5>
+<form>
+  <input type="text" placeholder="Search..." ng-model="searchText.prettyName" />
+</form>
+<table style="width:100%">
+  <tbody>
+    <tr ng-repeat="character in characters | filter:searchText">
+      <td>
+        <a href="#{{character.name}}" title="{{character.description}}">{{character.prettyName}}</a>
+      </td>
+    </tr>
+    <tr ng-show="(characters | filter:searchText).length == 0">
+      <td>Sorry, no results found!</td>
+    </tr>
+  </tbody>
+</table>
