@@ -2,6 +2,8 @@
 
 A simple tool for crafting game design documents written in AngularJS.
 
+This is a bit of a rework, from scratch of [https://github.com/omgaz/ags-gdd](https://github.com/omgaz/ags-gdd)
+
 ## Installation
 
 clone from git
