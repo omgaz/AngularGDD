@@ -1,4 +1,6 @@
-var express = require('express');
+var express = require('express'),
+	path 	= require('path');
+
 var app = express();
 
 // Create a restful API
@@ -10,7 +12,7 @@ var api = {
 app.configure(function(){
 	app.use(express.methodOverride());
 	app.use(express.bodyParser());
-	app.use(express.static(__dirname + '\\..\\client'));
+	app.use(express.static(path.join(__dirname, '/../client')));
 	app.use(app.router);
 });
 
