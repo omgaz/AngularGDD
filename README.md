@@ -2,10 +2,6 @@
 
 A simple tool for crafting game design documents written in AngularJS.
 
-## version 0.0.1
-
- - static json files for content
-
 ## Installation
 
 clone from git
@@ -25,12 +21,25 @@ start server
 
 	node ./server/web-server
 
-## Writing code
+## Code
 
-Code base is in the src folder. Edit files in here, the run the Grunt command to compile it to your client.
+Code is in the `src` directory.
 
-## Usage
+Run `grunt` to concat and minify (src compilation directory is `client/app`).
+
+## API
 
 get characters
 	
 	get /api/characters
+
+## version 0.0.1
+
+ - static json files for content
+
+## next steps
+
+ - migrate css to scss
+ - migrate js to coffeescript (or typescript)
+ - handle route navigation
+ - create new characters (start with just local storage for now then maybe an AWS db)
