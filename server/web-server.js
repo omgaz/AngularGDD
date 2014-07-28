@@ -16,6 +16,10 @@ app.configure(function(){
 	app.use(app.router);
 });
 
-var server = app.listen(3000, function() {
-    console.log('Listening on port %d', server.address().port);
-});
+if (process.env.PORT) {
+	var server = app.listen(process.env.PORT, function() {
+	    console.log('Listening on port %d', server.address().port);
+	});
+}
+
+module.exports = app;
