@@ -1,6 +1,21 @@
 {
   "name": "gdd-app",
-  "version": "0.1.0",
+  "version": "0.1.1",
+  "main": "server/web-server.js",
+  "engines": {
+    "node": "0.10.x"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/omgaz/angular-gdd.git"
+  },
+  "author": "Gary J Chisolm",
+  "keywords": [
+    "gdd",
+    "angular",
+    "example"
+  ],
+  "scripts": { "start": "node ./server/web-server.js" },
   "devDependencies": {
     "express": "~3.4.8",
     "grunt": "~0.4.2",

@@ -1,1 +1,1 @@
-web: grunt server watch
+web: npm start
