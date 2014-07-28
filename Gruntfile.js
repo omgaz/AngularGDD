@@ -42,8 +42,8 @@ module.exports = function(grunt) {
       }
     },
     watch: {
-      files: ['<%= jshint.files %>'],
-      tasks: ['jshint']
+      files: ['<%= jshint.files %>', 'src/**/*.tpl.html'],
+      tasks: ['jshint', 'concat', 'uglify', 'copy']
     }
   });
 
@@ -54,5 +54,10 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-contrib-copy');
 
   grunt.registerTask('default', ['jshint', 'concat', 'uglify', 'copy']);
+
+  grunt.registerTask('server', 'Start a custom web server', function() {
+    grunt.log.writeln('Started web server on port 3000');
+    require('./server/web-server.js').listen(3000);
+  });
 
 };

@@ -19,9 +19,9 @@ run grunt (concat and minify js into client/app dir)
 
 	grunt
 
-start server
+start server (this will start a server and watch js and tpl files for changes)
 
-	node ./server/web-server
+	grunt server watch
 
 ## Code
 
