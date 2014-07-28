@@ -35,7 +35,7 @@ get characters
 	
 	get /api/characters
 
-## version 0.0.1
+## version 0.0.2
 
  - static json files for content
 
@@ -43,5 +43,4 @@ get characters
 
  - migrate css to scss
  - migrate js to coffeescript (or typescript)
- - handle route navigation
  - create new characters (start with just local storage for now then maybe an AWS db)

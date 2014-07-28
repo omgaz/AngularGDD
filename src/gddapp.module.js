@@ -20,6 +20,11 @@ gddApp.controller('HeaderCtrl', ['$scope', '$location', '$route',
       name: "GDD"
     };
 
+    $scope.navClass = function (page) {
+        var currentRoute = $location.path().substring(1) || 'home';
+        return page === currentRoute ? 'active' : '';
+    }; 
+
     $scope.home = function () {
       $location.path('/characters');
     };
