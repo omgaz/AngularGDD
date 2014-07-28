@@ -4,6 +4,10 @@ A simple tool for crafting game design documents written in AngularJS.
 
 This is a bit of a rework, from scratch of [https://github.com/omgaz/ags-gdd](https://github.com/omgaz/ags-gdd)
 
+## Demo
+
+Deployed to Heroku at: [http://angular-gdd.herokuapp.com/](http://angular-gdd.herokuapp.com/)
+
 ## Installation
 
 clone from git
