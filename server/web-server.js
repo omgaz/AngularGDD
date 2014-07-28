@@ -1,7 +1,10 @@
 var express = require('express'),
-  path  = require('path');
+  path  = require('path'),
+  logfmt = require("logfmt");
 
 var app = express();
+
+app.use(logfmt.requestLogger());
 
 // Create a restful API
 var api = {
