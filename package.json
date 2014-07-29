@@ -16,7 +16,8 @@
     "example"
   ],
   "scripts": {
-    "start": "node ./server/web-server.js"
+    "start": "node ./server/web-server.js",
+    "postinstall": "./node_modules/.bin/grunt"
   },
   "devDependencies": {
     "express": "~3.4.8",
