@@ -19,7 +19,7 @@
     "start": "node ./server/web-server.js",
     "postinstall": "./node_modules/.bin/grunt"
   },
-  "devDependencies": {
+  "dependencies": {
     "express": "~3.4.8",
     "grunt": "~0.4.2",
     "grunt-cli": "~0.1.13",
