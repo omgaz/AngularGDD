@@ -49,6 +49,11 @@ get characters
 
 ## next steps
 
+ - oauth
+ - firebase
+ - bower
+ - karma
+ - protractor
  - migrate css to scss
  - migrate js to coffeescript (or typescript)
  - create new characters (start with just local storage for now then maybe an AWS db)
